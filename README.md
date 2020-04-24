@@ -1,5 +1,5 @@
 # html-builder
-This project is a template to start other HTML based projects that don't require any bundler (react, vue, angular, etc...) This is useful to create a static HTML site with a javascript plain project.
+This project is a template to start other HTML based projects that don't require any bundler (react, vue, angular, etc...) This is useful to create a static HTML site with a javascript plain project without a bundler.
 
 This project use the latest features of Gulp to compile Javascript (including ES6) into a simple JS, combine all output files into one file, and minify all scripts inot one optimized JS File.
 
@@ -8,7 +8,7 @@ The same for CSS, this project could understand SCSS or SASS files and convert t
 The HTML file will use the pure JS and CSS files without any optimization in the development mode, but then it will change to the optimized CSS and JS files and it will use cache burst technice to rename the optimized files using the timestamp in the build moment. This will ensure a correct cache validation on production.
 
 
-##Usage
+## Usage
 - Clone this project
 - Replace the body of the index.html with your own body and your dev files (js files)
 - Copy your JS files inot the assets/js folder
@@ -56,3 +56,4 @@ This project will optimize your files thanks to:
 - gulp-uglify
 - jshint
 - node-sass
+- babel *(to easily parse ES6 into ES5)*
