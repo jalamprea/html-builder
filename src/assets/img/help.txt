@@ -1,0 +1,4 @@
+On this folder you can put all your Images used on the project.
+This images will be optimized and copied to the production folder.
+
+You can remove this help file.

@@ -1,0 +1,19 @@
+/*
+ * Put here your SCSS files or direct CSS files.
+ * This file is only an example of what you can do.
+ * remove this file or replce it with your own files.
+ */
+
+html {
+    --background: #dedede;
+    --font-size: 18px;
+}
+
+html, body, #root {
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size);
+    background: var(--background);
+    font-weight: normal;
+    line-height: 1;
+}

@@ -1,0 +1,4 @@
+On this folder you can put all your Javascript libraries needed with the minified version.
+This project will not minify anything here, it will combine all of this files into one optimized file.
+
+You can remove this help file.
