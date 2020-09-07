@@ -78,7 +78,7 @@ function cleanDist(done) {
 function watchFiles() {
   watch('src/**/*.html', copyHTML);
   watch(['src/assets/scss/**/*.scss', 'src/assets/scss/*.scss', 'src/assets/scss/*.css'] , compileSCSS);
-  watch('src/assets/js/*.js', compileJS);
+  watch('src/assets/js/*.js', series(jsLint, compileJS));
 }
 
 
@@ -156,7 +156,7 @@ function minifyCss() {
 }
 
 // DEV
-exports.dev = series(cleanDist, copyVendor, copyImages, copyHTML, compileJS, compileSCSS, browserSyncInit, watchFiles);
+exports.dev = series(cleanDist, jsLint, copyVendor, copyImages, copyHTML, compileJS, compileSCSS, browserSyncInit, watchFiles);
 
 // PROD
 exports.prod = series(cleanDist, compileSCSS, copyImages, copyHTML, minifyScripts, concatScripts, minifyCss, renameSources);

@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Put here your script or multiple JS files in the same folder.
  *
@@ -12,5 +14,5 @@
 window.addEventListener('load', initApp);
 function initApp() {
   const example = "hello world!";
-  console.log('FROM JS:', example);
+  console.log('FROM JS:', example)
 }
